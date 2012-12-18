@@ -1,0 +1,23 @@
+# Compiled Source #
+#######################
+*.class
+*.exe
+*.pyc
+*.svn
+
+# Eclipse settings #
+##########################
+eclipse
+.settings
+tmp
+application.log
+.pydevproject
+.project
+.classpath
+log.txt
+logs
+logs/*
+.log
+.err
+log4j.properties
+
