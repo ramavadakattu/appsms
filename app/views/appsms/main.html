@@ -1,0 +1,71 @@
+#{extends 'main_bootstrap.html' /}
+#{set title:'SMS app' /}
+
+ <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="muted">SMS eBay Siri </h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+      	
+      	   <form  action="@{SMSAppController.getItemTitle()}"  method="GET">
+      	   			<input type="text" name="itemId"  />
+      	   			<input type="submit" value="Submit"/>      	   	
+      	   </form>
+      	   
+      	   #{if itemId}
+      	   
+      	   			${itemId}      	   
+      	   #{/if}
+      	   
+      	   <a href="@{SMSAppController.getItemTitle(544545455)}"> Get item title </a>
+      	
+      	#{if title}
+      	   
+      	   			${title}      	   
+      	   #{/if}
+        
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Company 2012</p>
+      </div>
+
+    </div> <!-- /container -->
+
